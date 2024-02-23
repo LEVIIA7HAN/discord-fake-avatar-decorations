@@ -5,7 +5,7 @@
 		"banner": {
 			"image": "/banners/elements.png",
 			"text": "/bannertext/elements.png",
-			"height": 38
+			"height": 42
 		},
 		"items": [
 			{
