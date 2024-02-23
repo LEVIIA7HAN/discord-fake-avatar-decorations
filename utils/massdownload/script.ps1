@@ -3,7 +3,7 @@ if (Test-Path -Path ".\output\") {
     Remove-Item .\output\ -Recurse -Force
 }
 mkdir .\output\
-foreach ($url in Get-Content .\utils\massdownload\urls.txt) {
+foreach ($url in Get-Content .\urls.txt) {
     $name = $url -replace "\w+:\/\/(\w+\.?)+\/avatar-decoration-presets\/", ".\output\" -replace "\?(\w+=\w+&?)*", ""
     Write-Output $name
     Invoke-WebRequest $url -OutFile $name
